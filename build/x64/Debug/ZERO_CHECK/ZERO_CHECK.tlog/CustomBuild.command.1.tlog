@@ -1,0 +1,10 @@
+^C:\USERS\CODMA\ONEDRIVE\DESKTOP\FLIGHTCONTROLLER\FLIGHTCONTROLLER\BUILD\CMAKEFILES\559B511419621C436CB754DF6D94BE37\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/codma/OneDrive/Desktop/FlightController/FlightController -BC:/Users/codma/OneDrive/Desktop/FlightController/FlightController/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/codma/OneDrive/Desktop/FlightController/FlightController/build/QuadcopterSim.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

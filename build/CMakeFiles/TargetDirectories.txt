@@ -1,0 +1,3 @@
+C:/Users/codma/OneDrive/Desktop/FlightController/FlightController/build/CMakeFiles/sim.dir
+C:/Users/codma/OneDrive/Desktop/FlightController/FlightController/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/codma/OneDrive/Desktop/FlightController/FlightController/build/CMakeFiles/ZERO_CHECK.dir

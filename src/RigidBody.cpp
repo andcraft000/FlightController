@@ -16,17 +16,13 @@ void displayBody(const RigidBody& s)
     std::cout << "\nForce RB:\n";
     displayVector(s.force);
 
-    std::cout << "\nWeight RB:\n" << s.mass;
+    std::cout << "\nMass RB:\n" << s.mass << '\n';
     
 }
 
 void updateBody(RigidBody& s, double dt)
-{   
-    s.acceleration = {scalarDivision(s.force, s.mass)};
-
-    s.velocity = {vectorAddition((s.velocity), 
-                 (scalarMultiplication(s.acceleration, dt)))};
-    
-    s.position = {vectorAddition((s.position), 
-                 (scalarMultiplication(s.velocity, dt)))};
+{
+    s.acceleration = s.force / s.mass;
+    s.velocity     = s.velocity + s.acceleration * dt;
+    s.position     = s.position + s.velocity * dt;
 }

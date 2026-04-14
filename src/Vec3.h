@@ -1,17 +1,40 @@
 #pragma once
+#include <cmath>
 
-struct Vec3{
+struct Vec3 {
     double x{};
     double y{};
     double z{};
+
+    Vec3 operator+(const Vec3& other) const {
+        return {x + other.x, y + other.y, z + other.z};
+    }
+
+    Vec3 operator-(const Vec3& other) const {
+        return {x - other.x, y - other.y, z - other.z};
+    }
+
+    Vec3 operator*(double scalar) const {
+        return {x * scalar, y * scalar, z * scalar};
+    }
+
+    Vec3 operator/(double scalar) const {
+        return {x / scalar, y / scalar, z / scalar};
+    }
+
+    Vec3& operator+=(const Vec3& other) {
+        x += other.x; y += other.y; z += other.z;
+        return *this;
+    }
+
+    double magnitude() const {
+        return std::sqrt(x*x + y*y + z*z);
+    }
 };
 
-void displayVector(const Vec3& s);
+// Free function for scalar * Vec3 (so that it's 2.0 * vec, not just vec * 2.0)
+inline Vec3 operator*(double scalar, const Vec3& v) {
+    return v * scalar;
+}
 
-Vec3 vectorAddition(const Vec3& s, const Vec3& f);
-Vec3 vectorSubtraction(const Vec3& s, const Vec3& f);
-Vec3 scalarMultiplication(const Vec3& s, double scalar);
-Vec3 scalarDivision(const Vec3& s, double scalar);
-double magnitude(const Vec3& s);
-
-
+void displayVector(const Vec3& v);

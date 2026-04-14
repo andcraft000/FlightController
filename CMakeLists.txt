@@ -9,4 +9,5 @@ include_directories(include)
 add_executable(sim
     src/main.cpp
     src/Vec3.cpp
+    src/RigidBody.cpp
 )

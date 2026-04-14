@@ -4,6 +4,9 @@
 struct RigidBody{
     Vec3 position;
     Vec3 velocity;
+    Vec3 acceleration;
+    Vec3 force;
+    const double mass;
 };
 
 void displayBody(const RigidBody& s);

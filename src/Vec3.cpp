@@ -42,6 +42,16 @@ Vec3 scalarMultiplication(const Vec3& s, double scalar)
     return scalarVector;
 }
 
+Vec3 scalarDivision(const Vec3& s, double scalar)
+{
+     Vec3 scalarVector{
+        (s.x / scalar),
+        (s.y / scalar),
+        (s.z / scalar)
+    };
+    return scalarVector;   
+}
+
 double magnitude(const Vec3& s)
 {
     return std::sqrt(( (s.x*s.x) + (s.y*s.y) + (s.z*s.z) ));

@@ -115,7 +115,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=QuadcopterSim
+CMAKE_PROJECT_NAME:STATIC=FlightController
 
 //Value Computed by CMake
 CMAKE_PROJECT_SPDX_LICENSE:STATIC=
@@ -190,6 +190,24 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 // during the make.  This is useful for debugging only. With Visual
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
+
+//Value Computed by CMake
+FlightController_BINARY_DIR:STATIC=C:/Users/codma/OneDrive/Desktop/FlightController/FlightController/build
+
+//Value Computed by CMake
+FlightController_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+FlightController_SOURCE_DIR:STATIC=C:/Users/codma/OneDrive/Desktop/FlightController/FlightController
+
+//Value Computed by CMake
+Flightcontroller_BINARY_DIR:STATIC=C:/Users/codma/OneDrive/Desktop/FlightController/FlightController/build
+
+//Value Computed by CMake
+Flightcontroller_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+Flightcontroller_SOURCE_DIR:STATIC=C:/Users/codma/OneDrive/Desktop/FlightController/FlightController
 
 //Value Computed by CMake
 QuadcopterSim_BINARY_DIR:STATIC=C:/Users/codma/OneDrive/Desktop/FlightController/FlightController/build

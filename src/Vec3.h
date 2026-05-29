@@ -32,7 +32,7 @@ struct Vec3 {
     }
 };
 
-// Free function for scalar * Vec3 (so that it's 2.0 * vec, not just vec * 2.0)
+// Free function for scalar * Vec3 (so that it's 2.0 * vec, not just vec * 2.0) (Scalar Multiplication)
 inline Vec3 operator*(double scalar, const Vec3& v) {
     return v * scalar;
 }

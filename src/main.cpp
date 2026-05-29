@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Vec3.h"
 #include "RigidBody.h"
+#include <ctime>
 
 int main()
 {
@@ -12,7 +13,7 @@ int main()
     Vec3 position{2.0, 3.0, 10.2};
     Vec3 velocity{1.0, 2.5, 5.7};
     Vec3 acceleration{};
-    Vec3 thrust {3, 9.8, 0.14};
+    Vec3 thrust {}; // Testing for now, inputs random thrust, calculated each step
     Vec3 gravity {0, -9.8, 0};
     Vec3 gravityForce = mass * gravity;
     Vec3 netForce = gravityForce + thrust;
@@ -27,6 +28,9 @@ int main()
 
     std::cout << "\nRigidBody: \n";
     displayBody(rigidbody);
+
+        
+
 
     while (step < 10)
     {

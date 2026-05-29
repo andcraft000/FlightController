@@ -25,4 +25,12 @@ void updateBody(RigidBody& s, double dt)
     s.acceleration = s.force / s.mass;
     s.velocity     = s.velocity + s.acceleration * dt;
     s.position     = s.position + s.velocity * dt;
+
 }
+
+// void stayUp(RigidBody&s)
+// {
+//     if (s.y < 0){
+//         return;
+//     } 
+// }

@@ -7,6 +7,9 @@
     <ClCompile Include="C:\Users\codma\OneDrive\Desktop\FlightController\FlightController\src\Vec3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\codma\OneDrive\Desktop\FlightController\FlightController\src\RigidBody.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\codma\OneDrive\Desktop\FlightController\FlightController\CMakeLists.txt" />
